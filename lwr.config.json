@@ -1,0 +1,22 @@
+{
+    "lwc": { 
+        "modules": 
+        [
+            { "dir": "$rootDir/src/modules" }
+        ] 
+    },
+    "assets": [
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/assets"
+        }
+    ],
+    "routes": [
+        {
+            "id": "home",
+            "path": "/",
+            "rootComponent": "ui/app"
+        }
+    ]
+}

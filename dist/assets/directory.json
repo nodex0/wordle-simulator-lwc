@@ -1,0 +1,17 @@
+{
+    "spanish-without-accents": {
+        "label": "Español (sin tildes)",
+        "filename": "spanish-without-accents.json",
+        "characterSet": "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+    },
+    "spanish-with-accents": {
+        "label": "Español (con tildes)",
+        "filename": "spanish-with-accents.json",
+        "characterSet": "ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚÜ"
+    },
+    "english": {
+        "label": "English",
+        "filaname": "english.json",
+        "characterSet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    }
+}

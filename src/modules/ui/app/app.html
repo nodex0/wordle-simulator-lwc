@@ -1,0 +1,40 @@
+<template>
+    <div class="container">
+        <h1 class="title">{labels.appTitle}</h1>
+        <div class="language-selector">
+            <label>{labels.dictionary} {dictionaryFile}
+                <select onchange={handleLanguageChange}>
+                    <template for:each={languages} for:item="language">
+                        <option key={language.value} value={language.value}>{language.label}</option>
+                    </template>
+                </select>
+            </label>
+        </div>
+        <div class="simulator">
+            <div class="plays">
+                <template for:each={moves} for:item="move">
+                    <div key={move.index} class="played-word">
+                        <ui-word-display word={move.word} result={move.result} characters={characters}></ui-word-display>
+                    </div>
+                </template>
+            </div>
+            <template if:true={pool}>
+                <div data-render="pool" class="pool">
+                    <template for:each={pool} for:item="word">
+                        <span key={word} class="pool-word">{word}</span>
+                    </template>
+                </div>
+            </template>
+        </div>
+        <div class="panel">
+            <div class="new-word">
+                <h3>{labels.newWordTitle}</h3>
+                <p>{labels.newWordDescription}</p>
+                <ui-word-display characters={characters} is-editable="true" onchange={handleInputWordChange}></ui-word-display>
+            </div>
+            <div class="new-word-button">
+                <input onclick={addMove} type="button" disabled={isAddMoveDisabled} value={labels.newWordButton} />
+            </div>
+        </div>
+    </div>
+</template>

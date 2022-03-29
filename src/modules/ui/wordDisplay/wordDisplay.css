@@ -1,0 +1,47 @@
+.letter {
+    width: 1.5em;
+    display: inline-flex;
+    font-size: 2em;
+    border: 2px solid lightgray;
+    height: 1.5em; 
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 0.25em;
+}
+
+.letter-solved {
+    color: white;
+    border: none;
+    padding: 2px;
+}
+
+.letter-oop {
+    background-color: rgb(201, 180, 88);
+}
+
+.letter-hit {
+    background-color: rgb(106, 170, 100);
+}
+
+.letter-miss {
+    background-color: rgb(120, 124, 126);
+}
+
+.letter input {
+    width: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    font-weight: inherit;
+    background: transparent;
+    border: none;
+    color: inherit;
+}
+
+.letter input:focus {
+    outline: 0;
+    border: 0;
+}

@@ -1,0 +1,12 @@
+<template>
+    <template for:each={renderableWord} for:item="letter">
+        <template if:false={isEditable}>
+            <span key={letter.index} class={letter.classes}>{letter.character}</span>
+        </template>
+        <template if:true={isEditable}>
+            <span key={letter.index} class={letter.classes}>
+                <input type="text" data-index={letter.index} value={letter.character} maxlength="1" minlength="1" onbeforeinput={handleBeforeInput} onchange={handleChange} onclick={handleClick} />
+            </span>
+        </template>
+    </template>
+</template>
