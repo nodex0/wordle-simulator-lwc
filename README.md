@@ -1,4 +1,4 @@
-You can check out the built version on the github page.
+##### You can check out the built version on the [https://nodex0.github.io/wordle-simulator-lwc](github page).
 
 ## Running the Project
 
