@@ -11,7 +11,7 @@
     },
     "english": {
         "label": "English",
-        "filaname": "english.json",
+        "filename": "english.json",
         "characterSet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
 }

@@ -5,23 +5,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "lwr serve",
+    "dev": "lwr dev",
     "start": "lwr serve --mode prod",
     "start:compat": "lwr serve --mode compat",
     "start:prod-compat": "lwr serve --mode prod-compat",
     "build": "rollup --config rollup.config.js"
   },
   "dependencies": {
-    "lwr": "0.6.2"
-  },
-  "engines": {
-    "node": ">=14.15.4 <17"
+    "lwr": "^0.13.6"
   },
   "devDependencies": {
-    "@lwc/rollup-plugin": "^2.11.3",
-    "@rollup/plugin-replace": "^4.0.0",
-    "lwc": "^2.11.3",
-    "rollup": "^2.70.1",
-    "rollup-plugin-copy": "^3.4.0"
+    "@lwc/rollup-plugin": "^7.2.1",
+    "@rollup/plugin-replace": "^5.0.7",
+    "lwc": "^7.2.1",
+    "rollup": "^4.20.0",
+    "rollup-plugin-copy": "^3.5.0"
   }
 }

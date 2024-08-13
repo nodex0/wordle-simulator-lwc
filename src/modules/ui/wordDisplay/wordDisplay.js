@@ -114,7 +114,6 @@ export default class WordDisplay extends LightningElement {
     handleChange(event) {
         const allInputs = Array.from(this.template.querySelectorAll('[data-index]'));
         const existingWord = allInputs.map(input => input.value === '' ? '#' : input.value);
-        this.word = existingWord.join('');
     }
 
     handleClick(event) {
