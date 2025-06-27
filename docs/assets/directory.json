@@ -13,5 +13,10 @@
         "label": "English",
         "filename": "english.json",
         "characterSet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    },
+    "nyt-english": {
+        "label": "English (NYT)",
+        "filename": "nyt-english",
+        "characterSet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
 }
