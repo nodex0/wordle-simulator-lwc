@@ -16,7 +16,7 @@
     },
     "nyt-english": {
         "label": "English (NYT)",
-        "filename": "nyt-english",
+        "filename": "nyt-english.json",
         "characterSet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
 }
